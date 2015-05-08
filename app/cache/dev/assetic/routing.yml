@@ -1,0 +1,5 @@
+_assetic:
+    resource: .
+    type: assetic
+_app:
+    resource: /Users/aleitner/work/schema_viz/app/config/routing_dev.yml

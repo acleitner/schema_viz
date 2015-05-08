@@ -1,0 +1,3 @@
+acl_viz:
+    resource: "@VizBundle/Resources/config/routing.yml"
+    prefix:   /

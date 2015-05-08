@@ -1,0 +1,6 @@
+VizBundle_dashboard:
+    path:     /dashboard
+    defaults: { _controller: VizBundle:Dashboard:index }
+VizBundle_new_viz:
+    path:    /schema/new
+    defaults: { _controller: VizBundle:Schema:new }

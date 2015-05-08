@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}schemaviz{% endblock %} - SchemaViz</title>
+        {% block stylesheets %}
+            <link href="{{ asset('css/base.css') }}" type="text/css" rel="stylesheet" />
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <section id="wrapper">
+            <header id="header">
+                <div class="top">
+                    {% block navigation %}
+                        <nav>
+                            <ul class="navigation">
+                                <li><a href="{{ path('VizBundle_dashboard') }}">Dashboard</a></li>
+                            </ul>
+                        </nav>
+                    {% endblock %}
+                </div>
+            </header>
+            <aside class="sidebar">
+                {% block sidebar %}{% endblock %}
+            </aside>
+            <section class="main-col">
+                {% block body %}{% endblock %}
+            </section>
+            <div id="footer">
+                {% block footer %}
+                    schema visualizer tool - created by <a href="https://github.com/acleitner">acleitner</a>
+                {% endblock %}
+            </div>
+        </section>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
